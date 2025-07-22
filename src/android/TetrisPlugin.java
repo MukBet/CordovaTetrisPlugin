@@ -10,7 +10,7 @@ public class TetrisPlugin extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         Log.d(TAG, "Пока ничего нативного не используем: " + action);
-        callbackContext.success("Hey from JAva code for action: " + action + " with arg: " + args.getString(0));
+        callbackContext.success("Hey from JAva code for action: " + action + "; arg: " + args.getString(0));
         return false;
     }
 }
