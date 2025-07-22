@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-tetris" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>TetrisPlugin</name>
+    <js-module src="www/tetris.js" name="TetrisPlugin">
+        <clobbers target="TetrisPlugin"/>
+    </js-module>
+    <platform name="android">
+        <source-file src="src/android/TetrisPlugin.java" target-dir="src/"/> <!--package\namespace from top of Java file-->
+        <config-file target="config.xml" parent="/*">
+            <feature name="TetrisPlugin">
+                <param name="android-package" value="TetrisPlugin"/> <!--package\namespace from top of Java file, plus name of class. If no package\namespace - just a class name -->
+            </feature>
+        </config-file>
+    </platform>
+</plugin>

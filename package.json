@@ -1,0 +1,10 @@
+{
+  "name": "cordova-plugin-tetris",
+  "version": "0.2.1",
+  "cordova": {
+    "id": "cordova-plugin-tetris",
+    "platforms": ["android", "browser"]
+  },
+  "author": "Andrui Software Foundation",
+  "license": "Apache-2.0"
+}
